@@ -49,12 +49,12 @@ db.collection("komentar")
 
         const data = doc.data();
 
-        html +=
+        html += '
             <div style="border:1px solid #ddd:padding:10px;margin:10px;border-radius:10px;">
                 <b>${data.nama}</b><br>
                 ${data.komentar}
             </div>
-        ;
+        ';
     });
 
     document.getElementById("devkomentar").innerHTML = html;
