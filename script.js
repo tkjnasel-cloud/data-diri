@@ -57,6 +57,6 @@ db.collection("komentar")
         ;
     });
 
-    document.getElementById("daftarkomentar").innerHTML = html;
+    document.getElementById("devkomentar").innerHTML = html;
 
 });
