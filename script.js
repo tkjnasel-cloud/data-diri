@@ -41,7 +41,7 @@ function kirimkomentar() {
 }
 
 db.collection("komentar")
-.order.By("waktu", "desc")
+.orderBy("waktu", "desc")
 .onSnapshot((snapshot) => {
     let html = "";
 
