@@ -1,19 +1,20 @@
 <html>
     <head>
         <title>MENGENAL DIRI SENDIRI</title>
+        <link rel="stylesheet" href="style.css"
     </head>
-<body bgcolor="white">
-
+<body>
+            <div class="container">
         <center>
             <h1 style="color: rgb(255, 53, 204);">SELAMAT DATANG DI WEBSITE SAYA</h1>
             <hr width="70%">
-
+            <div class="biodata"
             <h2 style="color: rgb(33, 177, 177);">Biodata</h2>
             <p><strong>Nama :</strong>Naselia</p>
             <p><strong>Kelas:</strong>12</p>
             <p><strong>Jurusan:</strong>Teknik Komputer dan Jaringan</p>
             <p><strong>Asal Sekolah:</strong>SMK MUHAMMADIYAH 3 METRO</p>
-
+            </div>
             <img src="foto.myself.jpeg" width="25%">
 
             <h2>Tentang Saya</h2>
@@ -30,15 +31,18 @@
                 <li>Minum coffe</li>
                 <li>Menanam bunga</li>
             </ul>
-            <h3>❤️ Like: <span id="jumlahLike">0</span></h3>
+            <h2 class="like">
+                ❤️ Like :
+                <span id="jumlahlike"></span>
+            </h2>
 
-            <button onclick="tambahLike()">
-               👍 Like
+            <button id="btnlike" onclick="tambahlike()">
+                ❤️ LIKE
             </button>
             <br>
             <a href="https://www.instagram.com/nasel.liaa?igsh=ZHp2amxrdm54Z3Nv">Instagram saya</a>
             <hr width="70%">
-            <marquue>LOVE YOUU</marquue>
+            <marquee>LOVE YOUU</marquee>
             <P>muach muach muach</P>
 
             <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
@@ -47,5 +51,6 @@
             <script src="firebase.config.js"></script>
             <script src="script.js"></script>
         </center>
+            </div>
 </body>
 </html>
