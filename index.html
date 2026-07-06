@@ -1,5 +1,6 @@
 <html>
     <head>
+         <meta charset="UTF-8">
         <title>MENGENAL DIRI SENDIRI</title>
         <link rel="stylesheet" href="style.css"
     </head>
@@ -26,21 +27,35 @@
             <h2>Hobi saya</h2>
             <ul style="list-style-position: inside; text-align: center;">
                 <li>Membaca</li>
+                <li>Bermain dengan teman teman saya</li>
                 <li>Mendengarkan musik</li>
+                <li>Minum coffe</li>
+                <li>Menanam bunga</li>
             </ul>
             <h2 class="like">
                 ❤️ Like :
-                <span id="jumlahLike"></span>
+                <span id="jumlahlike"></span>
             </h2>
 
-            <button id="btnlike" onclick="tambahLike()">
+            <button id="btnlike" onclick="tambahlike()">
                 ❤️ LIKE
             </button>
-            <br>
+
+            <h2>komentar</h2>
+            <input type="text" id="nama" placeholder="nama">
+            <br><br>
+
+            <textarea id="komentar" placeholder="tuliskomentar...." rows="4" cols="40"></textarea>
+            <br><br>
+             
+            <button onclick="kirimkomentar()">kirim</button>
+            <hr>
+            <div id="devkomentar"></div>
+            
             <a href="https://www.instagram.com/nasel.liaa?igsh=ZHp2amxrdm54Z3Nv">Instagram saya</a>
             <hr width="70%">
-            <marquee>LOVE YOUU MUACH MUACH MUACH</marquee>
-            
+            <marquee>LOVE YOUU</marquee>
+            <P>muach muach muach</P>
 
             <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
             <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
